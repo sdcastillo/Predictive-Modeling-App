@@ -1,0 +1,39 @@
+# SamWiki skin on Cayman for this project Pages site.
+# Theme setup follows GitHub's Jekyll theme guide:
+# https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+#
+# Pin: remote_theme pages-themes/cayman@v0.2.0
+# Skin files: assets/css/style.scss, _layouts/default.html,
+# _includes/head-custom.html, _includes/samwiki-nav.html
+# Pages opt in with front matter `samwiki: true`.
+
+title: Predictive Modeling App
+description: An R Shiny explorer for Exam PA datasets, plus a modeling report scored on mean absolute error.
+remote_theme: pages-themes/cayman@v0.2.0
+url: https://sdcastillo.github.io
+baseurl: /Predictive-Modeling-App
+samwiki: true
+show_downloads: false
+markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      samwiki: true
+
+exclude:
+  - README.md
+  - .Rhistory
+  - R Files.Rproj
+  - Modeling Project.Rmd
+  - train_y.RDS
+  - xgb_test.RDS
+  - test.txt
+  - sample.txt
+  - vendor
