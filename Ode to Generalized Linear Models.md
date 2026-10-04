@@ -1,3 +1,10 @@
+---
+layout: default
+title: Ode to Generalized Linear Models
+description: A short verse on link functions, likelihood, and the models under a predictive report.
+samwiki: true
+---
+
 **Ode to Generalized Linear Models**
 
 In the garden of statistics, under the sky so broad,
